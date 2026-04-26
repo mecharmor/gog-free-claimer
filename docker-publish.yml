@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/gog-free-claimer
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/gog-free-games-claimer
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}

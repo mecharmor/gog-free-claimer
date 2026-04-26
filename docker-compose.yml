@@ -1,6 +1,6 @@
 services:
   gog-claimer:
-    image: mecharmor/gog-free-games-claimer:latest
+    image: corylewis/gog-free-games-claimer:latest
     # Or build locally:
     # build: .
     container_name: gog-claimer

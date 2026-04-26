@@ -60,7 +60,7 @@ node claimer.js --dry-run
 ### Pull from Docker Hub
 
 ```bash
-docker pull your_dockerhub_username/gog-free-claimer:latest
+docker pull corylewis/gog-free-games-claimer:latest
 ```
 
 ### Run with Docker
@@ -71,7 +71,7 @@ docker run --rm \
   -e GOG_COOKIE="your_full_cookie_string_here" \
   -e DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..." \
   -v $(pwd)/data:/app/data \
-  your_dockerhub_username/gog-free-claimer:latest
+  corylewis/gog-free-games-claimer:latest
 ```
 
 ### Run with Docker Compose
@@ -92,8 +92,8 @@ docker logs -f gog-claimer
 ### Build locally
 
 ```bash
-docker build -t gog-free-claimer .
-docker run -e GOG_COOKIE="..." gog-free-claimer
+docker build -t gog-free-games-claimer .
+docker run -e GOG_COOKIE="..." gog-free-games-claimer
 ```
 
 ### Discord notifications (optional)
@@ -108,7 +108,7 @@ You can create a webhook in Discord via **Server Settings → Integrations → W
 
 ### One-time setup
 
-1. Create a repo on [hub.docker.com](https://hub.docker.com) named `gog-free-claimer`
+1. Create a repo on [hub.docker.com](https://hub.docker.com) named `gog-free-games-claimer`
 2. Add these secrets to your GitHub repo (Settings → Secrets → Actions):
    - `DOCKERHUB_USERNAME` — your Docker Hub username
    - `DOCKERHUB_TOKEN` — a Docker Hub access token ([create one here](https://hub.docker.com/settings/security))
