@@ -1,5 +1,7 @@
 # GOG Free Game Claimer 🎮
 
+![GOG Free Game Claimer icon](assets/icon.png)
+
 Automatically claims free GOG giveaway games
 
 Just an authenticated HTTP GET to `https://www.gog.com/giveaway/claim`. That's it.

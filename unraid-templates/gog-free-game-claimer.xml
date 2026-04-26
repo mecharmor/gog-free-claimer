@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>GOG-Free-Games-Claimer</Name>
-  <Repository>corylewis/gog-free-claimer:latest</Repository>
-  <Registry>https://hub.docker.com/r/corylewis/gog-free-claimer</Registry>
+  <Repository>corylewis/gog-free-games-claimer:latest</Repository>
+  <Registry>https://hub.docker.com/r/corylewis/gog-free-games-claimer</Registry>
   <GitHub>https://github.com/corylewis/gog-free-claimer</GitHub>
   <Project>https://github.com/corylewis/gog-free-claimer</Project>
   <Overview>
-    Automatically claims free GOG giveaway games via the GOG API — no browser, no captchas, no Playwright. Just paste your GOG session cookie once and it runs on a schedule, silently adding free games to your library whenever GOG runs a giveaway.
+    Automatically claims free GOG giveaway games via the GOG API — no browser, no captchas, no Playwright. Paste your GOG session cookie once, run the container, and it will attempt the current giveaway claim.
 
     HOW TO GET YOUR GOG COOKIE:
     1. Log in to gog.com in your browser
@@ -29,9 +29,9 @@
   <Category>Productivity: Tools:</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/corylewis/unraid-templates/main/gog-free-claimer.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/corylewis/unraid-templates/main/icons/gog-free-claimer.png</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
-  <PostArgs>--schedule</PostArgs>
+  <Icon>https://raw.githubusercontent.com/corylewis/gog-free-claimer/main/assets/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
   <CPUset/>
   <DateInstalled/>
   <DonateText/>
