@@ -1,0 +1,20 @@
+{
+  "name": "gog-free-claimer",
+  "version": "1.0.0",
+  "description": "Automatically claims free GOG giveaway games via the GOG API",
+  "type": "module",
+  "main": "claimer.js",
+  "scripts": {
+    "start": "node claimer.js",
+    "test": "node claimer.js --dry-run"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

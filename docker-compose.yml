@@ -1,0 +1,11 @@
+services:
+  gog-claimer:
+    image: mecharmor/gog-free-games-claimer:latest
+    # Or build locally:
+    # build: .
+    container_name: gog-claimer
+    restart: "no"
+    command: ["node", "claimer.js"]
+    environment:
+      - GOG_COOKIE=${GOG_COOKIE}
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
