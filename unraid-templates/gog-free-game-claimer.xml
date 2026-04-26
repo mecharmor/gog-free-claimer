@@ -28,8 +28,8 @@
   </Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/corylewis/unraid-templates/main/gog-free-claimer.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/corylewis/gog-free-claimer/main/assets/icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/mecharmor/gog-free-claimer/main/unraid-templates/gog-free-game-claimer.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/mecharmor/gog-free-claimer/main/unraid-templates/icons/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

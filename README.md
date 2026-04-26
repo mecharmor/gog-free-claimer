@@ -1,6 +1,6 @@
 # GOG Free Game Claimer 🎮
 
-![GOG Free Game Claimer icon](assets/icon.png)
+![GOG Free Game Claimer icon](unraid-templates/icons/icon.png)
 
 Automatically claims free GOG giveaway games
 
