@@ -163,7 +163,7 @@ function interpretResult(result) {
 
 async function run() {
   const now = timestamp();
-  await logEvent('info', chalk.blue(`\n[${now}] GOG Free Game Claimer starting...`), `Run started at ${now}`);
+  // await logEvent('info', chalk.blue(`\n[${now}] GOG Free Game Claimer starting...`), `Run started at ${now}`);
 
   const cookie = getCookies();
 
@@ -171,7 +171,7 @@ async function run() {
   let username;
   try {
     username = await verifyAuth(cookie);
-    await logEvent('success', chalk.green(`Authenticated as: ${username}`), `Authenticated as: ${username}`);
+    // await logEvent('success', chalk.green(`Authenticated as: ${username}`), `Authenticated as: ${username}`);
   } catch (err) {
     await logEvent('error', chalk.red(`Auth failed: ${err.message}`), `Auth failed: ${err.message}`);
     process.exit(1);
@@ -210,7 +210,7 @@ async function run() {
       break;
 
     case 'no_giveaway':
-      await logEvent('warn', chalk.yellow('No active giveaway on GOG right now.'), 'No active giveaway on GOG right now.');
+      // await logEvent('warn', chalk.yellow('No active giveaway on GOG right now.'), 'No active giveaway on GOG right now.');
       break;
 
     case 'dry-run':
@@ -222,11 +222,11 @@ async function run() {
       process.exit(1);
   }
 
-  await logEvent(
-    'info',
-    chalk.gray(`    Raw response: ${JSON.stringify(result.json ?? result.raw?.slice(0, 120) ?? '(empty)')}`),
-    `Raw response: ${JSON.stringify(result.json ?? result.raw?.slice(0, 120) ?? '(empty)')}`,
-  );
+  // await logEvent(
+  //   'info',
+  //   chalk.gray(`    Raw response: ${JSON.stringify(result.json ?? result.raw?.slice(0, 120) ?? '(empty)')}`),
+  //   `Raw response: ${JSON.stringify(result.json ?? result.raw?.slice(0, 120) ?? '(empty)')}`,
+  // );
 }
 
 // ── entry point ───────────────────────────────────────────────────────────────
