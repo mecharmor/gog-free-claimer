@@ -23,7 +23,7 @@
     This container starts, runs the claimer, and then stops on its own. If you want it to run automatically on a schedule, the recommended approach is to use the "User Scripts" Unraid plugin by Andrew Zawadzki (available in Community Applications). Once installed, create a new script, set it to run hourly, and use the following as the script content:
 
     #!/bin/bash
-    docker start gog-free-games-claimer
+    docker start GOG-Free-Games-Claimer
 
     This will start the container once per hour. Since GOG giveaways typically last 48-72 hours, hourly is more than frequent enough to never miss one.
   </Overview>
