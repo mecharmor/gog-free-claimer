@@ -3,8 +3,9 @@
   <Name>GOG-Free-Games-Claimer</Name>
   <Repository>corylewis/gog-free-games-claimer:latest</Repository>
   <Registry>https://hub.docker.com/r/corylewis/gog-free-games-claimer</Registry>
-  <GitHub>https://github.com/corylewis/gog-free-claimer</GitHub>
-  <Project>https://github.com/corylewis/gog-free-claimer</Project>
+  <Network>bridge</Network>
+  <GitHub>https://github.com/mecharmor/gog-free-claimer</GitHub>
+  <Project>https://github.com/mecharmor/gog-free-claimer</Project>
   <Overview>
     Automatically claims free GOG giveaway games via the GOG API — no browser, no captchas, no Playwright. Paste your GOG session cookie once, run the container, and it will attempt the current giveaway claim.
 
