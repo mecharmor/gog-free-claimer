@@ -1,0 +1,9 @@
+<CommunityApplications>
+  <Profile>
+    GOG Free Game Claimer automatically claims free GOG giveaway games by sending an authenticated
+    request to the GOG giveaway endpoint. Runs on a schedule via Docker on Unraid — no browser required.
+    Configure your GOG session cookie once and let it run. Optionally sends Discord notifications on each claim.
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/mecharmor/gog-free-claimer/main/unraid-templates/icons/icon.png</Icon>
+  <WebPage>https://github.com/mecharmor/gog-free-claimer</WebPage>
+</CommunityApplications>
